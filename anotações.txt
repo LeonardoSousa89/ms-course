@@ -1,0 +1,3 @@
+houve um erro no pom.xml do hr-eureka-server,
+alinhei o documento assim como dos outros documentos 
+e ele funcionou corretamente
