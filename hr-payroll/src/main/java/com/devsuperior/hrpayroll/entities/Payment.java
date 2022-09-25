@@ -2,9 +2,6 @@ package com.devsuperior.hrpayroll.entities;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
 public class Payment implements Serializable{
 		private static final long serialVersionUID = 1;
 	
