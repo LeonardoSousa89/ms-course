@@ -1,0 +1,7 @@
+
+case study of netflix microservices
+
+palestra: https://www.youtube.com/watch?v=CZ3wIuvmHeM (parei em: 24:38)
+
+siglas: edge computing/arquitecture, api gateway zuul, elb(elastic load balancing), nccp, api, middle tier & platform, 
+        bucket testing, subscriber, recomendations, routing, configuration, crypto, cache, database, evcache
