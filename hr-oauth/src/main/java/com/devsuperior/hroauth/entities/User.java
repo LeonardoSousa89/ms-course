@@ -1,10 +1,16 @@
 package com.devsuperior.hroauth.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
-public class User implements Serializable{
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+public class User implements UserDetails ,Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
@@ -62,7 +68,39 @@ public class User implements Serializable{
 	public Set<Role> getRoles() {
 		return roles;
 	}
+	
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		return roles.stream()
+					.map(e -> new SimpleGrantedAuthority(e.getRoleName()))
+				    .collect(Collectors.toList());
+	}
 
+	@Override
+	public String getUsername() {
+		return email;
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		return true;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		return true;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		return true;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		return true;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -87,4 +125,5 @@ public class User implements Serializable{
 			return false;
 		return true;
 	}
+
 }
