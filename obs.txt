@@ -2,3 +2,11 @@ fiz um commit único porquê o git
 não visualizou alterações, e eu já
 havia inserido todos os Dockerfiles,
 antes do build.
+
+fixar:
+	testar todos os conteiners no ec2
+	spring security
+	spring rest api com feign client
+	configuração centralizada
+
+expectativa de finalização e fixação total do conteúdo: 01/04
