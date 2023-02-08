@@ -1,0 +1,4 @@
+fiz um commit único porquê o git
+não visualizou alterações, e eu já
+havia inserido todos os Dockerfiles,
+antes do build.
