@@ -1,10 +1,8 @@
-fiz um commit único porquê o git
-não visualizou alterações, e eu já
-havia inserido todos os Dockerfiles,
-antes do build.
+o .gitignore bloqueou a pasta target por isso,
+fiz um único commit.
 
 fixar:
-	testar todos os conteiners no ec2
+	gerar o build em cloud e testar todos os conteiners no ec2
 	spring security
 	spring rest api com feign client
 	configuração centralizada
